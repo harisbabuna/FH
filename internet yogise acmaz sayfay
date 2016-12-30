@@ -1,0 +1,5 @@
+@Override
+public void onReceivedError(WebView view, int errorCode,
+String description, String failingUrl) {
+// Bir sorun oluştuğunda kullanıcıya bildir.
+Toast.makeText(getApplicationContext(), "Bir sorun oluştu: " + description, Toast.LENGTH_SHORT).show();
